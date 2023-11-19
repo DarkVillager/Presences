@@ -14,10 +14,11 @@
 		"vi_VN": "Steam là điểm đến tối thượng dành cho việc chơi, thảo luận, và tạo dựng các trò chơi."
 	},
 	"url": [
+		"help.steampowered.com",
 		"steamcommunity.com",
 		"store.steampowered.com"
 	],
-	"version": "2.2.20",
+	"version": "2.3.0",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/S/Steam/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/S/Steam/assets/thumbnail.png",
 	"color": "#000000",
