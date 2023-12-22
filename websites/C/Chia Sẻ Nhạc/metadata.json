@@ -10,11 +10,12 @@
 	],
 	"description": {
 		"en": "High-fidelity music sharing and ranking community",
-		"vi_VN": "Cộng đồng chia sẻ nhạc chất lượng cao và xếp hạng âm nhạc trực tuyến"
+		"vi_VN": "Cộng đồng chia sẻ nhạc chất lượng cao và xếp hạng âm nhạc trực tuyến",
+		"nl": "High-fidelity gemeenschap voor het delen en rangschikken van muziek"
 	},
 	"url": "chiasenhac.vn",
 	"regExp": "([a-z0-9]+[.])?chiasenhac[.]vn",
-	"version": "1.0.13",
+	"version": "1.0.14",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/C/Chia%20S%E1%BA%BB%20Nh%E1%BA%A1c/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/C/Chia%20S%E1%BA%BB%20Nh%E1%BA%A1c/assets/thumbnail.png",
 	"color": "#FB5B49",

@@ -6,11 +6,12 @@
 	},
 	"service": "Board Game Arena",
 	"description": {
-		"en": "Play board games online!"
+		"en": "Play board games online!",
+		"nl": "Speel online boordspellen!"
 	},
 	"url": "boardgamearena.com",
 	"regExp": "[a-z]*[.]?boardgamearena[.]com",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/B/Board%20Game%20Arena/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/B/Board%20Game%20Arena/assets/thumbnail.png",
 	"color": "#4871b6",

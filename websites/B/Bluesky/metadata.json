@@ -6,11 +6,12 @@
 	},
 	"service": "Bluesky",
 	"description": {
-		"en": "Bluesky is a microblogging social network like Twitter.",
-		"fr": "Bluesky est un réseau social de microblogging comme Twitter."
+		"en": "Bluesky is a microblogging social network like Twitter/X.",
+		"fr": "Bluesky est un réseau social de microblogging comme Twitter/X.",
+		"nl": "Bluesky is een sociaal microblognetwerk zoals Twitter/X."
 	},
 	"url": "bsky.app",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/B/Bluesky/assets/logo.jpg",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/B/Bluesky/assets/thumbnail.png",
 	"color": "#0085FF",

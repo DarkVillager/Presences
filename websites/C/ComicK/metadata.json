@@ -13,10 +13,11 @@
 	"service": "ComicK",
 	"description": {
 		"en": "🚀 ComicK - Fastest Comic Reader",
-		"vi_VN": "🚀 ComicK - Trang đọc truyện tranh nhanh nhất"
+		"vi_VN": "🚀 ComicK - Trang đọc truyện tranh nhanh nhất",
+		"nl": "ComicK - Snelste striplezer"
 	},
 	"url": "comick.app",
-	"version": "1.2.5",
+	"version": "1.2.6",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/C/ComicK/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/C/ComicK/assets/thumbnail.png",
 	"color": "#f698c7",

@@ -6,13 +6,14 @@
 	},
 	"service": "Character.AI",
 	"description": {
-		"en": "character.ai is bringing to life the science-fiction dream of open-ended conversations and collaborations with computers."
+		"en": "character.ai is bringing to life the science-fiction dream of open-ended conversations and collaborations with computers.",
+		"nl": "character.ai brengt de sciencefictiondroom van open gesprekken en samenwerkingen met computers tot leven."
 	},
 	"url": [
 		"beta.character.ai",
 		"character.ai"
 	],
-	"version": "1.0.2",
+	"version": "1.0.3",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/C/Character.AI/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/C/Character.AI/assets/thumbnail.png",
 	"color": "#242525",

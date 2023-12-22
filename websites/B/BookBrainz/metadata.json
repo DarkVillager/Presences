@@ -6,10 +6,11 @@
 	},
 	"service": "BookBrainz",
 	"description": {
-		"en": "BookBrainz is a project to create an online database of information about every single book, magazine, journal and other publication ever written."
+		"en": "BookBrainz is a project to create an online database of information about every single book, magazine, journal and other publication ever written.",
+		"nl": "BookBrainz is een project om een online database te creëren met informatie over elk boek, tijdschrift, dagboek en andere publicatie ooit geschreven."
 	},
 	"url": "bookbrainz.org",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/B/BookBrainz/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/B/BookBrainz/assets/thumbnail.png",
 	"color": "#754e37",

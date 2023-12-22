@@ -12,10 +12,11 @@
 	],
 	"service": "Cracked.io",
 	"description": {
-		"en": "Cracked.io is a cracking forum and community. We offer free premium accounts to everyone and we have a variation of cracked and leaked programs to choose from!"
+		"en": "Cracked.io is a cracking forum and community. We offer free premium accounts to everyone and we have a variation of cracked and leaked programs to choose from!",
+		"nl": "Cracked.io is een cracking forum en gemeenschap. We bieden gratis premium accounts aan aan iedereen en we hebben een variatie aan gecrackte en gelekte programma's om uit te kiezen!"
 	},
 	"url": "cracked.io",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/C/Cracked.io/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/C/Cracked.io/assets/thumbnail.png",
 	"color": "#3F7192",

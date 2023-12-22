@@ -6,13 +6,14 @@
 	},
 	"service": "Chessly",
 	"description": {
-		"en": "Chess learning made fun and easy."
+		"en": "Chess learning made fun and easy.",
+		"nl": "Leer schaken om een leuke en makkelijke manier."
 	},
 	"url": [
 		"chessly.com",
 		"feedback.chessly.com"
 	],
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/C/Chessly/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/C/Chessly/assets/thumbnail.png",
 	"color": "#d1007e",

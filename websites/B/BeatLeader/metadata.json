@@ -6,7 +6,8 @@
 	},
 	"service": "BeatLeader",
 	"description": {
-		"en": "BeatLeader is Beat Saber's leaderboard with open code and community. Start posting your scores to compete with others on more than 100,000 different maps."
+		"en": "BeatLeader is Beat Saber's leaderboard with open code and community. Start posting your scores to compete with others on more than 100,000 different maps.",
+		"nl": "BeatLeader is het klassement van Beat Saber met open code en gemeenschap. Begin met het posten van je scores en ga de strijd aan met anderen op meer dan 100.000 verschillende maps."
 	},
 	"url": [
 		"www.beatleader.xyz",
@@ -14,7 +15,7 @@
 		"royale.beatleader.xyz"
 	],
 	"regExp": ".+\\.beatleader.xyz",
-	"version": "1.4.5",
+	"version": "1.4.6",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/B/BeatLeader/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/B/BeatLeader/assets/thumbnail.png",
 	"color": "#c81c9f",

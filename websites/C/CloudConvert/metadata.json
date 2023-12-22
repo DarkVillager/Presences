@@ -6,13 +6,14 @@
 	},
 	"service": "CloudConvert",
 	"description": {
-		"en": "CloudConvert is an online file converter. We support nearly all audio, video, document, ebook, archive, image, spreadsheet, and presentation formats. "
+		"en": "CloudConvert is an online file converter. We support nearly all audio, video, document, ebook, archive, image, spreadsheet, and presentation formats. ",
+		"nl": "CloudConvert is een online bestandsomzetter. Wij ondersteunen bijna alle audio-, video-, document-, ebook-, archief-, beeld-, spreadsheet- en Presentatie-bestandsformaten."
 	},
 	"url": [
 		"www.cloudconvert.com",
 		"cloudconvert.com"
 	],
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/C/CloudConvert/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/C/CloudConvert/assets/thumbnail.png",
 	"color": "#b53836",

@@ -6,7 +6,8 @@
 	},
 	"service": "Canvas",
 	"description": {
-		"en": "Canvas by Instructure is the world's #1 Learning Management System for schools, teachers and educators. Learn more about implementing the best LMS today."
+		"en": "Canvas by Instructure is the world's #1 Learning Management System for schools, teachers and educators. Learn more about implementing the best LMS today.",
+		"nl": "Canvas door Instructure is 's werelds nummer 1 leerbeheersysteem voor scholen, docenten en onderwijzers. Leer meer over het implementeren van het beste leerbeheersysteem vandaag."
 	},
 	"url": [
 		"learn.canvas.net",
@@ -14,7 +15,7 @@
 		"www.canvas.net"
 	],
 	"regExp": "((learn|www)[.]canvas[.]net|canvas[.]\\w+?([.]\\w+)+)|(\\w+?[.]instructure[.]com)",
-	"version": "1.2.0",
+	"version": "1.2.1",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/C/Canvas/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/C/Canvas/assets/thumbnail.png",
 	"color": "#e63d2f",

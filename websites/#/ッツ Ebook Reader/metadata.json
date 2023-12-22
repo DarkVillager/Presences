@@ -6,10 +6,11 @@
 	},
 	"service": "ッツ Ebook Reader",
 	"description": {
-		"en": "Online e-book reader that supports Yomichan."
+		"en": "Online e-book reader that supports Yomichan.",
+		"nl": "Online e-boeklezer die Yomichan ondersteunt."
 	},
 	"url": "reader.ttsu.app",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/%23/%E3%83%83%E3%83%84%20Ebook%20Reader/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/%23/%E3%83%83%E3%83%84%20Ebook%20Reader/assets/thumbnail.jpg",
 	"color": "#37474F",

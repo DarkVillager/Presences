@@ -6,10 +6,11 @@
 	},
 	"service": "Crave",
 	"description": {
-		"en": "The best series and movies including the latest Originals from Crave, HBO, HBO Max, Showtime, the entire HBO library and the biggest Hollywood blockbusters. Enjoy in English and French."
+		"en": "The best series and movies including the latest Originals from Crave, HBO, HBO Max, Showtime, the entire HBO library and the biggest Hollywood blockbusters. Enjoy in English and French.",
+		"nl": "De beste series en films, waaronder de nieuwste Originals van Crave, HBO, HBO Max, Showtime, de hele HBO-bibliotheek en de grootste Hollywood-kaskrakers. Geniet in het Engels en Frans."
 	},
 	"url": "www.crave.ca",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/C/Crave/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/C/Crave/assets/thumbnail.png",
 	"color": "#00c1f3",

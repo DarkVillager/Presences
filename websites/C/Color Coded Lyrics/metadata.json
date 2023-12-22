@@ -6,10 +6,11 @@
 	},
 	"service": "Color Coded Lyrics",
 	"description": {
-		"en": "Color-coded lyrics for songs from Korea, Japan, Taiwan, Thailand and China"
+		"en": "Color-coded lyrics for songs from Korea, Japan, Taiwan, Thailand and China",
+		"nl": "Songteksten met kleurcodering voor liedjes uit Korea, Japan, Taiwan, Thailand en China"
 	},
 	"url": "colorcodedlyrics.com",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/C/Color%20Coded%20Lyrics/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/C/Color%20Coded%20Lyrics/assets/thumbnail.png",
 	"color": "#755fbf",

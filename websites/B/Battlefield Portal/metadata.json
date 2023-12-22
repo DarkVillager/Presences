@@ -7,10 +7,11 @@
 	"service": "Battlefield Portal",
 	"description": {
 		"en": "Battlefield Portal is a platform where you will discover unexpected battles and change the rules of war. Take on custom-made modes or create your own unique experience using powerful builder tools.",
-		"vi_VN": "Battlefield Portal là nền tảng nơi bạn khám phá các trận đấu bất ngờ và thay đổi luật lệ của chiến tranh. Tham gia các chế độ tuỳ chọn hoặc tự xây dựng trải nghiệm của riêng mình bằng các công cụ đa năng."
+		"vi_VN": "Battlefield Portal là nền tảng nơi bạn khám phá các trận đấu bất ngờ và thay đổi luật lệ của chiến tranh. Tham gia các chế độ tuỳ chọn hoặc tự xây dựng trải nghiệm của riêng mình bằng các công cụ đa năng.",
+		"nl": "Battlefield Portal is een platform waar je onverwachte gevechten ontdekt en de regels van de oorlog kan veranderen. Neem het op tegen custom modi of creëer je eigen unieke ervaring met behulp van krachtige bouwgereedschappen."
 	},
 	"url": "portal.battlefield.com",
-	"version": "1.0.13",
+	"version": "1.0.14",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/B/Battlefield%20Portal/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/B/Battlefield%20Portal/assets/thumbnail.png",
 	"color": "#FF2C10",
