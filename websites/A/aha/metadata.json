@@ -6,10 +6,11 @@
 	},
 	"service": "aha",
 	"description": {
-		"en": "aha is an Indian over-the-top streaming service which offers Telugu and Tamil-language content. It is owned by Arha Media & Broadcasting Private Limited, a joint venture between Geetha Arts and My Home Group"
+		"en": "aha is an Indian over-the-top streaming service which offers Telugu and Tamil-language content. It is owned by Arha Media & Broadcasting Private Limited, a joint venture between Geetha Arts and My Home Group",
+		"nl": "aha is een Indiase over-de-top streamingdienst die Telugu- en Tamil-talige inhoud aanbiedt. Het is eigendom van Arha Media & Broadcasting Private Limited, een joint venture tussen Geetha Arts en My Home Group."
 	},
 	"url": "www.aha.video",
-	"version": "1.0.1",
+	"version": "1.0.2",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/A/aha/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/A/aha/assets/thumbnail.png",
 	"color": "#ffa500",

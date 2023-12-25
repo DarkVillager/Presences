@@ -6,11 +6,12 @@
 	},
 	"service": "Airbnb",
 	"description": {
-		"en": "Airbnb, Inc. is an American company that operates an online marketplace for lodging, primarily homestays for vacation rentals, and tourism activities."
+		"en": "Airbnb, Inc. is an American company that operates an online marketplace for lodging, primarily homestays for vacation rentals, and tourism activities.",
+		"nl": "Airbnb, Inc. is een Amerikaans bedrijf dat een online marktplaats beheert voor accommodatie, voornamelijk vakantiehuisjes voor vakantieverhuur, en toeristische activiteiten."
 	},
 	"url": "www.airbnb.com",
 	"regExp": "([a-z0-9-]+[.])*airbnb([.][a-z]+)+[/]",
-	"version": "1.1.7",
+	"version": "1.1.8",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/A/Airbnb/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/A/Airbnb/assets/thumbnail.png",
 	"color": "#f9585e",
