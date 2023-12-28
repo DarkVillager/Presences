@@ -10,10 +10,11 @@
 	],
 	"description": {
 		"en": "Browse all CS:GO skins, knives, gloves, cases, collections, stickers, music kits, and more. Check prices, market stats, previews, and more for every CS:GO items",
-		"vi_VN": "Tìm tất cả các skin, găng tay, hòm, bộ sưu tập, hộp nhạc CS:GO và hơn nữa. Theo dõi giá, giá trị thị trường, xem trước và hơn nữa cho mọi vật phẩm CS:GO"
+		"vi_VN": "Tìm tất cả các skin, găng tay, hòm, bộ sưu tập, hộp nhạc CS:GO và hơn nữa. Theo dõi giá, giá trị thị trường, xem trước và hơn nữa cho mọi vật phẩm CS:GO",
+		"nl": "Bekijk alle CS:GO-skins, messen, handschoenen, koffers, collecties, stickers, muziekkits en meer. Bekijk prijzen, marktstatistieken, voorvertoningen en meer voor alle CS:GO-artikelen"
 	},
 	"url": "csgostash.com",
-	"version": "1.2.9",
+	"version": "1.2.10",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/C/CSGO%20Stash/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/C/CSGO%20Stash/assets/thumbnail.png",
 	"color": "#13AFF0",

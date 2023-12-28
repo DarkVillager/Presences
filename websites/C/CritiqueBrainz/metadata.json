@@ -6,10 +6,11 @@
 	},
 	"service": "CritiqueBrainz",
 	"description": {
-		"en": "CritiqueBrainz is a repository for Creative Commons licensed music reviews. Here you can read what other people have written about an album or event and write your own review!"
+		"en": "CritiqueBrainz is a repository for Creative Commons licensed music reviews. Here you can read what other people have written about an album or event and write your own review!",
+		"nl": "CritiqueBrainz is een opslagplaats voor muziekrecensies met een Creative Commons-licentie. Hier kun je lezen wat andere mensen over een album of evenement hebben geschreven en je eigen recensie schrijven!"
 	},
 	"url": "critiquebrainz.org",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"logo": "https://cdn.rcd.gg/PreMiD/websites/C/CritiqueBrainz/assets/logo.png",
 	"thumbnail": "https://cdn.rcd.gg/PreMiD/websites/C/CritiqueBrainz/assets/thumbnail.png",
 	"color": "#36b5b2",
