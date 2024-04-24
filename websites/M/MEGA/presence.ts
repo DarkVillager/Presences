@@ -3,14 +3,19 @@ const presence = new Presence({
 	}),
 	browsingTimestamp = Math.floor(Date.now() / 1000);
 
+const enum Assets {
+	Logo = "https://cdn.rcd.gg/PreMiD/websites/M/MEGA/assets/logo.png",
+}
+
 presence.on("UpdateData", async () => {
 	let presenceData: PresenceData = {
-		largeImageKey: "https://cdn.rcd.gg/PreMiD/websites/M/MEGA/assets/logo.png",
+		largeImageKey: Assets.Logo,
 		startTimestamp: browsingTimestamp,
 	};
-	const [privacy, buttons] = await Promise.all([
+	const [privacy, buttons, cover] = await Promise.all([
 			presence.getSetting<boolean>("privacy"),
 			presence.getSetting<boolean>("buttons"),
+			presence.getSetting<boolean>("cover"),
 		]),
 		{ pathname, hostname, href } = document.location,
 		ioStaticPages: Record<string, PresenceData> = {
@@ -195,11 +200,39 @@ presence.on("UpdateData", async () => {
 
 						default: {
 							switch (true) {
+								case !document
+									.querySelector(".selection-status-bar")
+									.className.includes("hidden"): {
+									const size = document.querySelector(
+											".sel-notif-size-total"
+										)?.textContent,
+										element = document.querySelector(".currently-selected"),
+										imgElement = element
+											?.querySelector(".data-block-bg.thumb")
+											?.querySelector("img")?.src;
+									presenceData.details = privacy
+										? "Viewing a file"
+										: "Viewing file";
+									presenceData.state = `${
+										element?.querySelector(".file-block-title")?.textContent ??
+										document.querySelector(".file-name")?.textContent
+									} - ${size}`;
+
+									if (cover && imgElement) {
+										const img = await fetch(imgElement);
+										presenceData.largeImageKey =
+											(await img?.blob()) ?? Assets.Logo;
+									}
+									break;
+								}
 								case !!activeFolder?.textContent: {
 									presenceData.details = privacy
-										? "Viewing files"
+										? "Viewing all files"
 										: `Drive - ${activeFolder?.textContent}`;
 									break;
+								}
+								default: {
+									presenceData.details = "Viewing all files";
 								}
 							}
 						}
@@ -219,6 +252,8 @@ presence.on("UpdateData", async () => {
 			break;
 		}
 	}
+	if (!cover && presenceData.largeImageKey !== Assets.Logo)
+		presenceData.largeImageKey = Assets.Logo;
 	if (privacy && presenceData.state) delete presenceData.state;
 	if (!buttons) delete presenceData.buttons;
 
