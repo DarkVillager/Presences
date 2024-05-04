@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.premid.app/metadata/1.9",
+	"author": {
+		"id": "638080361179512853",
+		"name": "dark_ville"
+	},
+	"service": "Nexon",
+	"description": {
+		"en": "template"
+	},
+	"url": [
+		"nexonlogistics.com",
+		"nexonairlines.com",
+		"map.nexonlogistics.com",
+		"map.nexonairlines.com",
+		"shop.nexonlogistics.com",
+		"hub.nexonlogistics.com"
+	],
+	"version": "1.0.0",
+	"logo": "https://i.imgur.com/7NyrKJP.png",
+	"thumbnail": "https://i.imgur.com/VdLFzf1.png",
+	"color": "#84C444",
+	"category": "other",
+	"tags": [
+		"airplane",
+		"airline",
+		"logistics",
+		"trucks",
+		"map",
+		"maps"
+	],
+	"settings": [
+		{
+			"id": "cover",
+			"title": "Show Cover",
+			"icon": "fas fa-images",
+			"value": true
+		},
+		{
+			"id": "buttons",
+			"title": "Show Buttons",
+			"icon": "fas fa-compress-arrows-alt",
+			"value": true
+		}
+	]
+}
