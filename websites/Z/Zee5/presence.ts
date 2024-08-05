@@ -8,13 +8,13 @@ const enum Assets {
 }
 const getVideoStatus = (
 	presenceData: PresenceData,
-	video: HTMLVideoElement
+	video: HTMLVideoElement | null
 ) => {
-	if (video.paused) {
+	if (video?.paused) {
 		presenceData.smallImageKey = Assets.Pause;
 		presenceData.smallImageText = "paused";
 		delete presenceData.startTimestamp;
-	} else {
+	} else if (video) {
 		const [startTimestamp, endTimestamp] = presence.getTimestamps(
 			Math.floor(video.currentTime),
 			Math.floor(video.duration)
@@ -32,44 +32,36 @@ presence.on("UpdateData", async () => {
 			largeImageKey: Assets.Logo,
 			startTimestamp: browsingTimestamp,
 		},
-		{ pathname } = document.location;
+		{ pathname } = document.location,
+		video = document.querySelector<HTMLVideoElement>("video");
 
 	if (pathname === "/") presenceData.details = "Browsing home page";
 	else if (pathname === "/movies") presenceData.details = "Browsing movies";
 	else if (pathname.includes("/movies/details")) {
-		const currentPresenceData = getVideoStatus(
-			presenceData,
-			document.querySelector<HTMLVideoElement>("video")
-		);
+		const currentPresenceData = getVideoStatus(presenceData, video);
 		currentPresenceData.details = "Watching";
 		currentPresenceData.state = document.querySelector(
 			"div.consumptionMetaDiv > div > h1"
-		).textContent;
+		)?.textContent;
 	} else if (pathname.includes("tv-shows/details")) {
-		const currentPresenceData = getVideoStatus(
-			presenceData,
-			document.querySelector<HTMLVideoElement>("video")
-		);
+		const currentPresenceData = getVideoStatus(presenceData, video);
 		currentPresenceData.details = `Watching ${
-			document.querySelector("div.consumptionMetaDiv >  a  > h2").textContent
+			document.querySelector("div.consumptionMetaDiv >  a  > h2")?.textContent
 		}`;
 		currentPresenceData.state = `${
-			document.querySelector("div.consumptionMetaDiv >  div  > h1").textContent
+			document.querySelector("div.consumptionMetaDiv >  div  > h1")?.textContent
 		} ${
-			document.querySelector("div.consumptionMetaDiv >  div  > p").textContent
+			document.querySelector("div.consumptionMetaDiv >  div  > p")?.textContent
 		}`;
 	} else if (pathname.includes("web-series/details")) {
-		const currentPresenceData = getVideoStatus(
-			presenceData,
-			document.querySelector<HTMLVideoElement>("video")
-		);
+		const currentPresenceData = getVideoStatus(presenceData, video);
 		currentPresenceData.details = `Watching ${
-			document.querySelector("div.consumptionMetaDiv >  a  > h2").textContent
+			document.querySelector("div.consumptionMetaDiv >  a  > h2")?.textContent
 		}`;
 		currentPresenceData.state = `${
-			document.querySelector("div.consumptionMetaDiv >  div  > h1").textContent
+			document.querySelector("div.consumptionMetaDiv >  div  > h1")?.textContent
 		} ${
-			document.querySelector("div.consumptionMetaDiv >  div  > p").textContent
+			document.querySelector("div.consumptionMetaDiv >  div  > p")?.textContent
 		}`;
 	} else if (pathname === "tv-shows")
 		presenceData.details = "Browsing TV shows";
@@ -78,6 +70,7 @@ presence.on("UpdateData", async () => {
 	else if (pathname.includes("/web-series"))
 		presenceData.details = "Browsing web series";
 	else if (pathname.includes("/news")) presenceData.details = "Browsing news";
+
 	if (presenceData.details) presence.setActivity(presenceData);
 	else presence.setActivity();
 });

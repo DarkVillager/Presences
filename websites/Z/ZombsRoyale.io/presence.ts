@@ -135,6 +135,7 @@ presence.on("UpdateData", async () => {
 });
 
 function getPageletiable(js: string): Promise<string> {
+	// Should switch this over someday...
 	const eventName = "PreMiD_ZombsRoyale_Pageletiable";
 
 	return new Promise<string>(resolve => {

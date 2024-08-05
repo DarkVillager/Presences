@@ -17,8 +17,15 @@ presence.on("UpdateData", async () => {
 		path = pathname.replace(
 			`/${document.querySelector("html").getAttribute("lang")}`,
 			""
-		);
-
+		),
+		product = {
+			title: document.querySelector("#itemTitle")?.textContent,
+			price: document.querySelector("#lblPrice,#lblPriceY")?.textContent,
+			bids: document.querySelector("#bidNum")?.textContent,
+			condition: document.querySelector("#lblItemStatus")?.textContent,
+			seller: document.querySelector("#seller,#aSeller")?.textContent,
+			pageURL: document.querySelector<HTMLAnchorElement>("#productPage")?.href,
+		}; // Current product
 	// Profile
 
 	if (path === "/profile/" || path === "/profile/default.aspx") {
@@ -39,15 +46,14 @@ presence.on("UpdateData", async () => {
 				? `${cartItems} items`
 				: `${cartItems} item`
 		} in cart`;
-	}
-
-	if (path === "/profile/messages.aspx" || path === "/profile/support.aspx")
+	} else if (
+		path === "/profile/messages.aspx" ||
+		path === "/profile/support.aspx"
+	)
 		presenceData.details = "Viewing Messages";
-
-	if (path === "/profile/actions.aspx")
+	else if (path === "/profile/actions.aspx")
 		presenceData.details = "Looking at Events";
-
-	if (path === "/profile/watchlist.aspx") {
+	else if (path === "/profile/watchlist.aspx") {
 		if (
 			(search.includes("tab=auctions") && !search.includes("history")) ||
 			!search
@@ -81,34 +87,21 @@ presence.on("UpdateData", async () => {
 			presenceData.details = "Viewing watched sellers";
 		else if (search.includes("tab=recent"))
 			presenceData.details = "Looking at recently viewed items";
-	}
-
-	if (path === "/profile/parcel.aspx") presenceData.details = "Viewing parcels";
-
-	if (path === "/profile/payments.aspx")
+	} else if (path === "/profile/parcel.aspx")
+		presenceData.details = "Viewing parcels";
+	else if (path === "/profile/payments.aspx")
 		presenceData.details = "Viewing transactions";
-
-	if (path === "/profile/levels.aspx") {
+	else if (path === "/profile/levels.aspx") {
 		presenceData.details = "Checking current level";
 		presenceData.state = `Current Level: ${
-			document.querySelector("#lblCurrentTier").textContent
+			document.querySelector("#lblCurrentTier")?.textContent
 		}`;
-	}
-
-	if (path === "/profile/settings.aspx")
+	} else if (path === "/profile/settings.aspx")
 		presenceData.details = "Viewing settings";
-
 	// Product view
-
-	if (path === "/auction.aspx" && search.includes("itemCode")) {
-		presenceData.details = `Looking at ${
-			document.querySelector("#itemTitle").textContent
-		}`;
-		presenceData.state = `Price: ${
-			document.querySelector("#lblPriceY").textContent
-		} || Bids: ${document.querySelector("#bidNum").textContent} || Condition: ${
-			document.querySelector("#lblItemStatus").textContent
-		} || Seller: ${document.querySelector("#seller").textContent}`;
+	else if (path === "/auction.aspx" && search.includes("itemCode")) {
+		presenceData.details = `Looking at ${product.title}`;
+		presenceData.state = `Price: ${product.price} || Bids: ${product.bids} || Condition: ${product.condition} || Seller: ${product.seller}`;
 		presenceData.buttons = [
 			{
 				label: "View on ZenMarket",
@@ -116,20 +109,12 @@ presence.on("UpdateData", async () => {
 			},
 			{
 				label: "View on Yahoo Auctions",
-				url: document.querySelector("#productPage").getAttribute("href"),
+				url: product.pageURL,
 			},
 		];
-	}
-
-	if (path === "/yshoppingproduct.aspx") {
-		presenceData.details = `Looking at ${
-			document.querySelector("#itemTitle").textContent
-		}`;
-		presenceData.state = `Price: ${
-			document.querySelector("#lblPrice").textContent
-		} || Condition: ${
-			document.querySelector("#lblItemCondition").textContent
-		} || Seller: ${document.querySelector("#seller").textContent}`;
+	} else if (path === "/yshoppingproduct.aspx") {
+		presenceData.details = `Looking at ${product.title}`;
+		presenceData.state = `Price: ${product.price} || Condition: ${product.condition} || Seller: ${product.seller}`;
 		presenceData.buttons = [
 			{
 				label: "View on ZenMarket",
@@ -137,18 +122,12 @@ presence.on("UpdateData", async () => {
 			},
 			{
 				label: "View on Yahoo Shopping",
-				url: document.querySelector("#productPage").getAttribute("href"),
+				url: product.pageURL,
 			},
 		];
-	}
-
-	if (path === "/mercariproduct.aspx") {
-		presenceData.details = `Looking at ${
-			document.querySelector("#itemTitle").textContent
-		}`;
-		presenceData.state = `Price: ${
-			document.querySelector("#lblPrice").textContent
-		} || Seller: ${document.querySelector("#seller").textContent}`;
+	} else if (path === "/mercariproduct.aspx") {
+		presenceData.details = `Looking at ${product.title}`;
+		presenceData.state = `Price: ${product.price} || Seller: ${product.seller}`;
 		presenceData.buttons = [
 			{
 				label: "View on ZenMarket",
@@ -156,18 +135,12 @@ presence.on("UpdateData", async () => {
 			},
 			{
 				label: "View on Mercari",
-				url: document.querySelector("#productPage").getAttribute("href"),
+				url: product.pageURL,
 			},
 		];
-	}
-
-	if (path === "/rakumaproduct.aspx") {
-		presenceData.details = `Looking at ${
-			document.querySelector("#itemTitle").textContent
-		}`;
-		presenceData.state = `Price: ${
-			document.querySelector("#lblPrice").textContent
-		} || Seller: ${document.querySelector("#seller").textContent}`;
+	} else if (path === "/rakumaproduct.aspx") {
+		presenceData.details = `Looking at ${product.title}`;
+		presenceData.state = `Price: ${product.price} || Seller: ${product.seller}`;
 		presenceData.buttons = [
 			{
 				label: "View on ZenMarket",
@@ -175,18 +148,12 @@ presence.on("UpdateData", async () => {
 			},
 			{
 				label: "View on Rakuma",
-				url: document.querySelector("#productPage").getAttribute("href"),
+				url: product.pageURL,
 			},
 		];
-	}
-
-	if (path === "/rakutenproduct.aspx") {
-		presenceData.details = `Looking at ${
-			document.querySelector("#itemTitle").textContent
-		}`;
-		presenceData.state = `Price: ${
-			document.querySelector("#lblPrice").textContent
-		} || Seller: ${document.querySelector("#seller").textContent}`;
+	} else if (path === "/rakutenproduct.aspx") {
+		presenceData.details = `Looking at ${product.title}`;
+		presenceData.state = `Price: ${product.price} || Seller: ${product.seller}`;
 		presenceData.buttons = [
 			{
 				label: "View on ZenMarket",
@@ -194,20 +161,16 @@ presence.on("UpdateData", async () => {
 			},
 			{
 				label: "View on Rakuten",
-				url: document.querySelector("#productPage").getAttribute("href"),
+				url: product.pageURL,
 			},
 		];
-	}
-
-	if (path === "/amazonproduct.aspx") {
+	} else if (path === "/amazonproduct.aspx") {
 		const condition: HTMLSpanElement =
 			document.querySelector("#lblConditionName");
-		presenceData.details = `Looking at ${
-			document.querySelector("#itemTitle").textContent
+		presenceData.details = `Looking at ${product.title}`;
+		presenceData.state = `Price: ${product.price} ${
+			condition ? `|| Condition: ${condition.textContent}` : ""
 		}`;
-		presenceData.state = `Price: ${
-			document.querySelector("#lblPrice").textContent
-		} ${condition ? `|| Condition: ${condition.textContent}` : ""}`;
 		presenceData.buttons = [
 			{
 				label: "View on ZenMarket",
@@ -215,18 +178,12 @@ presence.on("UpdateData", async () => {
 			},
 			{
 				label: "View on Amazon",
-				url: document.querySelector("#productPage").getAttribute("href"),
+				url: product.pageURL,
 			},
 		];
-	}
-
-	if (path === "/othershopproduct.aspx") {
-		presenceData.details = `Looking at ${
-			document.querySelector("#itemTitle").textContent
-		}`;
-		presenceData.state = `Price: ${
-			document.querySelector("#lblPrice").textContent
-		}`;
+	} else if (path === "/othershopproduct.aspx") {
+		presenceData.details = `Looking at ${product.title}`;
+		presenceData.state = `Price: ${product.price}`;
 		presenceData.buttons = [
 			{
 				label: "View on ZenMarket",
@@ -234,22 +191,16 @@ presence.on("UpdateData", async () => {
 			},
 			{
 				label: "View on Original page",
-				url: document.querySelector("#productPage").getAttribute("href"),
+				url: product.pageURL,
 			},
 		];
-	}
-
-	if (
+	} else if (
 		path.includes("/s/") &&
 		path.split("/").length === 4 &&
 		document.querySelector("#itemTitle")
 	) {
-		presenceData.details = `Looking at ${
-			document.querySelector("#itemTitle").textContent
-		}`;
-		presenceData.state = `Price: ${
-			document.querySelector("#lblPrice").textContent
-		} || Seller: ${document.querySelector("#aSeller").textContent}`;
+		presenceData.details = `Looking at ${product.title}`;
+		presenceData.state = `Price: ${product.price} || Seller: ${product.seller}`;
 		presenceData.buttons = [
 			{
 				label: "View on ZenMarket",
@@ -257,7 +208,7 @@ presence.on("UpdateData", async () => {
 			},
 			{
 				label: "View on ZenPlus",
-				url: document.querySelector("#itemUrl").getAttribute("href"),
+				url: document.querySelector<HTMLAnchorElement>("#itemUrl")?.href,
 			},
 		];
 	}
